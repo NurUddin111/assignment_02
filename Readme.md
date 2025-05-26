@@ -40,6 +40,7 @@ WHERE class = 10;
 5. How can you calculate aggregate functions like COUNT(), SUM(), and AVG() in PostgreSQL?
 
 প্রশ্নোল্লিখিত ফাংশন গুলোকে বলা হয় এগ্রিগেট ফাংশন। এই ফাংশন ব্যবহার করা হয় যখন আমরা একটি গ্রুপ বা পুরো টেবিলের ওপর ভিত্তি করে কোনো হিসাব করতে চাই।  মনে করি আমার একটি students টেবিল আছে। এর ভিত্তিতে ফাংশন গুলো ব্যাবহার করে দেখানো হলো।
+
  COUNT() → মোট কতটি রেকর্ড আছে তা গণনা করা যায়
 
     উদাহরণঃ 
@@ -47,11 +48,13 @@ WHERE class = 10;
     Output: এটা students টেবিলে মোট কয়টি রেকর্ড আছে তা দেখাবে।
 
 SUM() → সব মান যোগ করে
+
     উদাহরণঃ 
     Query: SELECT SUM(marks) FROM students;
     Output: এটা সব স্টুডেন্টের marks কলামের মান যোগফল দেখাবে।
 
 AVG() → গড় মান বের করে
+
     উদাহরণঃ 
     Query: SELECT AVG(age) FROM students;
     Output: এটা সব স্টুডেন্টের age এর গড় দেখাবে।
